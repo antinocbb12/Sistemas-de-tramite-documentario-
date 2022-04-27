@@ -1,0 +1,11 @@
+D:\M_P\CRUD_CAPAS\CPS_DATOS\bin\Debug\CPS_DATOS.dll
+D:\M_P\CRUD_CAPAS\CPS_DATOS\bin\Debug\CPS_DATOS.pdb
+D:\M_P\CRUD_CAPAS\CPS_DATOS\obj\Debug\CPS_DATOS.csprojResolveAssemblyReference.cache
+D:\M_P\CRUD_CAPAS\CPS_DATOS\obj\Debug\CPS_DATOS.dll
+D:\M_P\CRUD_CAPAS\CPS_DATOS\obj\Debug\CPS_DATOS.pdb
+F:\torry\2018 II\M_P\CRUD_CAPAS\CPS_DATOS\bin\Debug\CPS_DATOS.dll
+F:\torry\2018 II\M_P\CRUD_CAPAS\CPS_DATOS\bin\Debug\CPS_DATOS.pdb
+F:\torry\2018 II\M_P\CRUD_CAPAS\CPS_DATOS\obj\Debug\CPS_DATOS.csprojAssemblyReference.cache
+F:\torry\2018 II\M_P\CRUD_CAPAS\CPS_DATOS\obj\Debug\CPS_DATOS.csproj.CoreCompileInputs.cache
+F:\torry\2018 II\M_P\CRUD_CAPAS\CPS_DATOS\obj\Debug\CPS_DATOS.dll
+F:\torry\2018 II\M_P\CRUD_CAPAS\CPS_DATOS\obj\Debug\CPS_DATOS.pdb

@@ -1,0 +1,506 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7CFC2429-8730-4ABB-A962-8C6A8DD77839}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CPS_PRESEBTACION</RootNamespace>
+    <AssemblyName>CPS_PRESEBTACION</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ESCANER.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FROM_ADMINISTRADORLOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FROM_ADMINISTRADORLOGIN.Designer.cs">
+      <DependentUpon>FROM_ADMINISTRADORLOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FROM_DOCUMENTACION.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FROM_DOCUMENTACION.Designer.cs">
+      <DependentUpon>FROM_DOCUMENTACION.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FROM_ESCANER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FROM_ESCANER.Designer.cs">
+      <DependentUpon>FROM_ESCANER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FROM_EXPEDIENTE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FROM_EXPEDIENTE.Designer.cs">
+      <DependentUpon>FROM_EXPEDIENTE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FROM_LOGIN_RECUPERAR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FROM_LOGIN_RECUPERAR.Designer.cs">
+      <DependentUpon>FROM_LOGIN_RECUPERAR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FROM_LOGIN_REGISTRO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FROM_LOGIN_REGISTRO.Designer.cs">
+      <DependentUpon>FROM_LOGIN_REGISTRO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FROM_LOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FROM_LOGIN.Designer.cs">
+      <DependentUpon>FROM_LOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FROM_REPORTEGENERAL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FROM_REPORTEGENERAL.Designer.cs">
+      <DependentUpon>FROM_REPORTEGENERAL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FROM_REPORTES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FROM_REPORTES.Designer.cs">
+      <DependentUpon>FROM_REPORTES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FROM_SOLICITANTE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FROM_SOLICITANTE.Designer.cs">
+      <DependentUpon>FROM_SOLICITANTE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FROM_VISUALISACION_DOCUMENTACION.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FROM_VISUALISACION_DOCUMENTACION.Designer.cs">
+      <DependentUpon>FROM_VISUALISACION_DOCUMENTACION.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FROM_VISUALISACION_SOLICITANTE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FROM_VISUALISACION_SOLICITANTE.Designer.cs">
+      <DependentUpon>FROM_VISUALISACION_SOLICITANTE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FROM_ADMINISTRADORLOGIN.resx">
+      <DependentUpon>FROM_ADMINISTRADORLOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FROM_DOCUMENTACION.resx">
+      <DependentUpon>FROM_DOCUMENTACION.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FROM_ESCANER.resx">
+      <DependentUpon>FROM_ESCANER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FROM_EXPEDIENTE.resx">
+      <DependentUpon>FROM_EXPEDIENTE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FROM_LOGIN_RECUPERAR.resx">
+      <DependentUpon>FROM_LOGIN_RECUPERAR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FROM_LOGIN_REGISTRO.resx">
+      <DependentUpon>FROM_LOGIN_REGISTRO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FROM_LOGIN.resx">
+      <DependentUpon>FROM_LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FROM_REPORTEGENERAL.resx">
+      <DependentUpon>FROM_REPORTEGENERAL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FROM_REPORTES.resx">
+      <DependentUpon>FROM_REPORTES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FROM_SOLICITANTE.resx">
+      <DependentUpon>FROM_SOLICITANTE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FROM_VISUALISACION_DOCUMENTACION.resx">
+      <DependentUpon>FROM_VISUALISACION_DOCUMENTACION.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FROM_VISUALISACION_SOLICITANTE.resx">
+      <DependentUpon>FROM_VISUALISACION_SOLICITANTE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimazar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimazar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hombre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descubrir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iniciar-sesion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CPS_NEGOCIO\CPS_NEGOCIO.csproj">
+      <Project>{d03a8ca7-1c45-4e86-a35b-144a3b558787}</Project>
+      <Name>CPS_NEGOCIO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\base-de-datos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ojo-de-cerradura.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descubrir1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\en.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\en1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diagrama.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gmail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perspectiva.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logopatwitter3_400x400.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1-0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-utea-principal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logopatwitter3_400x4001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-utea-principal1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trabajo-en-equipo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trabajo-en-equipo %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trabajo-en-equipo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salida.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\escudo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diagrama1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\impresora.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salida %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grafico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reportes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reportar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diagrama %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trazar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contrasena.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iniciar-sesion %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iniciar-sesion %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login %287%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\analitica.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\presentacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hombre-de-negocios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\borrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\material-de-oficina.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comprobado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seguir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chapa-de-identificacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chapa-de-identificacion %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dominio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\busqueda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\texto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cuenta-atras.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lider.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lider %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lider %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\material-de-oficina1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\archivo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\visual.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\visual %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\archivo %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\busqueda1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\impresora1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enfocar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vision.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trabajo-en-equipo %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trabajo-en-equipo %281%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\estudiante.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\estudiante1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendario1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12936632_562845643895568_5575093637913937734_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12936632_562845643895568_5575093637913937734_n1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reportes1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diagrama2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crecimiento.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crecimiento1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reportes2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login %286%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reportes3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\conexion %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\conexion %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\conexion %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\planificacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\presentacion %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crecimiento %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crecimiento %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crecimiento %281%292.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
